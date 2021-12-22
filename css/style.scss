@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+$mainWhite:#ffffff;
+$mainLightBlue:#c8d6e5;
+$mainGray:#666666;
+$fontSize:22px;
+$mainBlue:#00ccff;
+$fontFamily:sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 18px;
+  font-family: $fontFamily;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prociono', serif;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+h1{
+  color: $mainBlue;
+}
+h3{
+  color: $mainWhite;
+  font-size: 18px;
+}
+h5{
+  font-size: $fontSize;
+}
+p{
+  color: #b3b3b3;
+}
+strong{
+  color: #ff9900;
+}
+/*每個標題*/
+.title{
+  display: flex;
+  padding: 5% 10%;
+  justify-content: center;
+.row{
+  display: flex;
+  h1{
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  p{
+    font-size: 16px;
+    white-space: nowrap;
+    color: $mainGray;
+  }
+  .row2{
+    img{
+      width: 44px;
+      height: 60px;
+      margin: 0 15px;
+    }
+  }
+  .row3{
+    color: $mainGray;
+    align-self: center;
+    span{
+      width: 16px;
+    }
+    }
+  }
+}
+/*導覽列*/
+.header{
+  width: 100%;
+  height: 100vh;
+  background: url(/練習RWD/image/indexbg2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  nav{
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 100px;
+    }
+    i{
+      display: none;
+    }
+    .navlink{
+      flex: 1;
+      text-align: right;
+        ul{
+            li{
+            display: inline-block;
+            padding: 0px 12px;
+            position: relative;
+          a{
+            font-size: $fontSize;
+            color: $mainWhite;
+            font-family: $fontFamily;
+            font-weight: 700;
+            transition: 0.3s;
+            &:hover{
+              border-bottom: 5px solid $mainBlue;
+            }
+          }
+        }
+      }
+    }
+  }
+  .textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    color: $mainWhite;
+    font-size: $fontSize;
+    text-align: center;
+    h2{
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+    p {
+      margin: 30px 0 20px;
+    }
+    img{
+      animation: text_reveal 1s ;
+    }
+  }
+}
+/*關於我們*/
+.about{
+  width: 100%;
+  height: 100vh;
+  .about-title{
+    display: flex;
+    padding: 5% 10%;
+    justify-content: center;
+  .row{
+    display: flex;
+    h1{
+      font-size: 26px;
+      white-space: nowrap;
+    }
+    p{
+      font-size: 16px;
+      white-space: nowrap;
+      color: $mainGray;
+    }
+    .row2{
+      img{
+        width: 44px;
+        height: 60px;
+        margin: 0 15px;
+      }
+    }
+    .row3{
+      color: $mainGray;
+      align-self: center;
+      span{
+        width: 16px;
+      }
+      }
+    }
+  }
+  .about-content{
+    width: 100%;
+    padding: 0 10%;
+    .about-header{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      div{
+        text-transform: uppercase;
+        position: relative;
+        background: url(/練習RWD/image/Shape2copy13.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: inline;
+        padding: 0 1rem;
+        text-align: center;
+        transition: all 0.7s;
+        font-size: 25px;
+        &:hover{
+          background:url(/練習RWD/image/Shape2copy11.png) no-repeat;
+          background-size: cover;
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+    .about-desc{
+      margin: 8% auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      .about-img{
+        flex-basis: 50%;
+        display: flex;
+        // margin-bottom: 20px;
+        padding: 12px 0px;
+        img{
+          width: 122px;
+          height: 105px;
+          align-self: center;
+        }
+        .about-desc-text{
+          margin-left: 10px;
+          h2{
+            font-size: 22px;
+          }
+          p{
+            font-size:16px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+/*技術*/
+.ourskill{
+  width: 100%;
+  height: 100vh;
+  background-color: #f7f7f7;
+  .ourskill-contain{
+  padding: 10% 10%;
+  .ourskills-text{
+    text-align: center;
+    margin: 0 auto;
+    h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: $mainGray;
+      }
+    p{
+        font-size: 16px;
+      }
+    }
+  }
+  .ourskills-img{
+    display: flex;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+    .ourskills-item{
+      margin: 5px;
+      .img-percent{
+        background: url(/練習RWD/image/ourskill1.png) no-repeat ;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        margin: 20px auto;
+      }
+      h1{
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 16px;
+      }
+      h2{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+/*團隊*/
+.ourteam{
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(/練習RWD/image/laptop1.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: $mainWhite;
+  .ourteam-itd{
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    .ourteam-member{
+      flex-direction: column;
+      width: 25%;
+      height: 365px;
+      text-align: center;
+      margin-top: 5%;
+      position: relative;
+      img{
+        margin: 10px 0;
+        border-radius: 50%;
+      }
+      p{
+        margin-top: 10px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+/*服務*/
+.ourServices{
+  width: 100%;
+  height: 100vh;
+  .ourServices-contain{
+    padding: 0 10%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .ourServices-item{
+      flex-basis: 50%;
+      display: flex;
+      padding-bottom: 2%;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      margin-bottom: 2%;
+      position: relative;
+      &:nth-child(2n+1)::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        display: inline;
+        width: 1px;
+        height: 90%;
+        background: $mainGray;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline;
+        width: 68%;
+        margin-left: 15%;
+        height: 1px;
+        background: $mainGray;
+      }
+      .item-text{
+      padding-left: 3%;
+      width: 50%;
+      p{
+        font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  .contact-form{
+    padding: 0 15%;
+    margin: 3% auto;
+    display: flex;
+    flex-wrap: wrap;
+    .contact-left{
+      flex: 50%;
+      width: 100%;
+        .input-group{
+        margin: 0 30px 30px;
+        display: flex;
+        justify-content: space-around;
+          input{
+          flex: 1;
+          height: 40px;
+          border: 2px solid $mainLightBlue;
+          border-radius: 5px;
+          outline: none;
+          text-indent: 10px;
+          width: 100%;
+          }
+          button{
+            width: 147px;
+            height: 50px;
+            border: 2px solid $mainBlue;
+            border-radius: 5px;
+            color: $mainWhite;
+            background: $mainBlue;
+            cursor: pointer;
+          }
+          textarea{
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid $mainLightBlue;
+            border-radius: 5px;
+            text-indent: 10px;
+            resize: none;
+            padding-top: 10px;
+            &::placeholder{
+              font-size: 15px;
+            }
+          }
+          div{
+            flex-basis: 5%;
+          }
+        }
+      }
+    .contact-right{
+      flex: 50%;
+      .contact-right-text{
+        margin-bottom: 15px;
+        p{
+          padding: 10px 0;
+        }
+      }
+      .cotact-right-icon{
+        margin-top: 45px;
+        .contact-row{
+          margin-top: 10px;
+          display: flex;
+          img{
+            width: 20px;
+            height: 100%;
+          }
+          span{
+            align-self: center;
+            padding-left: 10px;
+            color: $mainGray;
+          }
+        }
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: 100vh;
+  .footer-nav{
+    width: 100%;
+    height: 20vh;
+    background-color: #2f2e2e;
+    opacity:0.6;
+    position: relative;
+    text-align: center;
+    .footer-link{
+      display: flex;
+      align-items: center;
+      height: 14vh;
+      ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        width: 100%;
+        li{
+          width: 80px;
+          padding: 0 20px;
+          transition: 0.3s all;
+          &:hover{
+            transform: scale(2);
+          }
+          a{
+            display: block;
+            opacity: 1;
+            img{
+              width: 100%;
+              height: 100%;
+              }
+          }
+        }
+      }
+    }
+    .footer-copyright{
+      background-color: $mainBlue;
+      width: 100%;
+      height: 6vh;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0.8;
+      p{
+        text-align: center;
+        line-height: 6vh;
+        font-size: 14px;
+        font-weight: 700;
+        color: $mainWhite;
+      }
+    }
+  }
+}
+
+
+@keyframes text_reveal{
+ 0%{
+  transform: translateX(-1000px);
+ } 
+ 60%{
+  transform: translateX(0);
+ }
+ 80%{
+  transform: translateX(-80px);
+ }
+ 100%{
+  transform: translateX(0);
+ }
+}
+
+@media (max-width: 471px){  
+  .title{
+    margin-top: 5px;
+    .row{
+      margin-top: 2%;
+    }
+  }
+  h1{
+    font-size: 12px !important;
+  }
+  P{
+    font-size: 10px !important;
+  }
+  .about .about-content .about-header div{
+    font-size: 10px !important;
+  }
+  .about{
+    .about-content{
+      .about-desc{
+      justify-content: space-between;
+      min-height: 50vh;
+      .about-img{
+        margin-bottom: 1px;
+        padding: 5px 0;
+        img{
+          width: 50px !important;
+          height: 50px !important;
+          align-self: center;
+        }
+      }
+    }
+  }
+    
+  }
+  .ourskill .ourskill-contain{
+    .ourskills-text{
+    margin-top: 10%;
+    }
+    .ourskills-img{
+      margin-top: 10px;
+      .ourskills-item{
+        margin: 20px 5px;
+      h2{
+        font-size: 14px;
+      }
+      }
+    }
+  }
+  
+  .ourteam {
+    padding-top: 5px;
+    h3{
+      font-size: 10px;
+    }
+    .ourteam-itd{
+    flex-wrap: wrap;
+    .ourteam-member{
+      flex-basis: 44%;
+      height: 100%;
+      }
+    }
+  }
+  .ourServices .ourServices-contain{
+    padding: 0;
+    .ourServices-item {
+      flex-basis: 100%;
+      width: 100%;
+      .item-img{
+        width: 50px;
+        height: 50px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .ourServices .ourServices-contain .ourServices-item:nth-child(2n+1)::before{
+    display: none;
+  }
+  .contact .contact-form .contact-left .input-group{
+    margin: 20px;
+    button{
+      height: 35px;
+    }
+  }
+  .contact .contact-form .contact-right .contact-right-text{
+    h5{
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  .contact .contact-form .contact-right .cotact-right-icon{
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 750px){
+  .about{
+    .about-content{
+      margin-top: 30px;
+      .about-desc{
+    flex-direction: column;
+    .about-img{
+      img{
+        width: 75px ;
+        height: 68px ;
+      }
+      .about-desc-text{
+          h2{
+            font-size: 14px !important;
+          }
+          }
+        }
+      }
+    }
+  }
+  .about .about-content .about-header div{
+    font-size: 16px;
+  }
+  .ourskill {
+    .ourskills-text{
+      margin-top: 50px;
+    }
+    .ourskills-img{
+      flex-wrap: wrap;
+      .ourskills-item{
+        flex-basis: 44%;
+        h2{
+          font-size: 15px;
+        }
+        .img-percent{
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 928px) {
+  html{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px !important;
+  }
+  .textbox{
+    h1{
+    font-size: 30px !important;
+    }
+  }
+  img{
+    width: 75px;
+  }
+  p{
+    font-size: 14px;
+  }
+  nav img{
+    width: 50px !important;
+  }
+  .header{
+    nav{
+      display: flex;
+      .fas{
+        display: block;
+        color: #fff;
+        margin: 10%;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .navlink{
+        position: absolute;
+        background: black;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+        transition: 1s;
+        ul{
+          padding: 30px;
+          li{
+            padding-bottom: 10%;
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+  .title{
+    .row{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .row2{
+        margin: 20px 0;
+      }
+    }
+  }
+  .about{
+    .title{
+      margin-top: 10%;
+    }
+    .about-content{
+      margin-top: 10%;
+      .about-desc{
+        padding: 5% 5%;
+        .about-img{
+          padding: 5px 5px;
+        }
+      }
+    }
+  }
+  .ourskill .ourskills-img .ourskills-item .img-percent{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-content{
+    .about-desc{
+      .about-img{
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .ourskill .ourskills-img .ourskills-item{
+    p{
+      width: 80%;
+      margin: 10px auto ;
+    }
+  }
+  .ourServices .ourServices-contain .ourServices-item .item-text p{
+    margin-top: 10px;
+  }
+  .ourteam .ourteam-itd .ourteam-member p{
+    margin-top: 10px;
+  }
+}
