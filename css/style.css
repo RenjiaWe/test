@@ -94,7 +94,7 @@ strong {
 .header {
   width: 100%;
   height: 100vh;
-  background: url(/練習RWD/image/indexbg2.png) no-repeat;
+  background: url(/image/indexbg2.png) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -241,7 +241,7 @@ strong {
 .about .about-content .about-header div {
   text-transform: uppercase;
   position: relative;
-  background: url(/練習RWD/image/Shape2copy13.png) no-repeat;
+  background: url(/image/Shape2copy13.png) no-repeat;
   background-size: cover;
   background-position: center;
   display: inline;
@@ -253,7 +253,7 @@ strong {
 }
 
 .about .about-content .about-header div:hover {
-  background: url(/練習RWD/image/Shape2copy11.png) no-repeat;
+  background: url(/image/Shape2copy11.png) no-repeat;
   background-size: cover;
 }
 
@@ -343,7 +343,7 @@ strong {
 }
 
 .ourskill .ourskills-img .ourskills-item .img-percent {
-  background: url(/練習RWD/image/ourskill1.png) no-repeat;
+  background: url(/image/ourskill1.png) no-repeat;
   background-size: cover;
   width: 150px;
   height: 150px;
@@ -370,7 +370,7 @@ strong {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url(/練習RWD/image/laptop1.png) no-repeat;
+  background: url(/image/laptop1.png) no-repeat;
   background-size: cover;
   background-position: center center;
   color: #ffffff;
